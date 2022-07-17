@@ -6,13 +6,13 @@
     --light-silver: #F5F4FA;
     --silver-gray: #757575;
     --button-hover: #188CE8;
-
     --contact-gray: #757575;
     --black-for-logo: #000;
     --silver-footer: #FFFFFF99;
-    --dominant-font: 'Roboto', sans-serif;
     --silver-icon: #AFB1B8;
     --border: #eee;
+
+    --dominant-font: 'Roboto', sans-serif;
 
     --tran-dur: 250ms;
     --tran-t-fun: cubic-bezier(0.4, 0, 0.2, 1);
@@ -86,12 +86,13 @@ section.section {
     padding-bottom: 94px;
 }
 
+
+
+                                                        /* header and footer */
 div.footer-twitter {
     margin-left: 70px;
     margin-top: 12px;
 }
-
-/* header and footer */
 
 header.header {
     border-bottom: 1px solid var(--border);
@@ -398,9 +399,9 @@ a.regular-customers-link:focus {
 }
 
 
-/* main page */
-/* main page */
-/* main page */
+                                                            /* main page */
+                                                            /* main page */
+                                                            /* main page */
 
 
 h1.main-title {
@@ -421,7 +422,9 @@ section.main-section {
     margin-right: auto;
 
     background-image:
-        linear-gradient(to bottom, rgba(58, 50, 47, 0.4), rgba(47, 48, 58, 0.4)),
+        linear-gradient(to bottom, 
+        rgba(58, 50, 47, 0.4), 
+        rgba(47, 48, 58, 0.4)),
         url("../images/img.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -431,7 +434,7 @@ section.main-section {
 form button[type="submit"],
 div.footer-twitter-mail-form button[type="submit"],
 div.container-effective-solutions button[type="button"] {
-    /*big blue button*/
+                                                                                /*big buttons*/
     font-family: inherit;
     font-size: 16px;
     font-weight: 700;
@@ -467,8 +470,6 @@ div.footer-twitter-mail-form button[type="submit"]:focus {
     box-shadow: 0 0 1px 1px var(--button-hover);
     outline: none;
 }
-
-
 
 ul.attention-to-details {
     display: flex;
@@ -545,7 +546,7 @@ ul.what-we-do div.what-we-do-desktop {
     /* transform: translate(-50%); */
     z-index: 10;
     width: 329px;
-    /* border: 1px dashed red; */
+   
 }
 
 div.what-we-do-desktop p {
@@ -685,9 +686,9 @@ div.attention-to-block {
 }
 
 
-/* portfolio */
-/* portfolio */
-/* portfolio */
+                                                            /* portfolio */
+                                                            /* portfolio */
+                                                            /* portfolio */
 
 
 
@@ -785,7 +786,7 @@ li.portfolio-many-buttons-item:nth-child(4) button {
 }
 
 li.portfolio-many-buttons-item button {
-    /*many buttons*/
+                                                            /*many buttons in portfolio*/
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -802,19 +803,14 @@ li.portfolio-many-buttons-item button {
     transition-duration: var(--tran-dur);
     transition-timing-function: var(--tran-t-fun);
 }
-
+li.portfolio-many-buttons-item button:focus,
 li.portfolio-many-buttons-item:hover button {
     background-color: var(--color-blue);
     color: var(--white);
+    outline: none;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-li.portfolio-many-buttons-item button:focus {
-    background-color: var(--color-blue);
-    color: var(--white);
-    outline: none;
 }
 
 h2.title-hidden {
@@ -895,7 +891,7 @@ div.modal button.button-close-in-corner:focus svg {
 }
 
 div.backdrop {
-    /* modal window */
+                                                              /* modal window */
     position: fixed;
     top: 0;
     left: 0;
@@ -938,13 +934,13 @@ h2.modal-title {
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--black);
     margin-top: 30px;
+
+    color: var(--black);
 }
 
 label.form-field-label {
     display: block;
-
     font-family: 'Roboto';
     font-style: normal;
     font-size: 12px;
@@ -1028,7 +1024,7 @@ textarea.form-field-comment::placeholder {
 
 
 form button[type="submit"] {
-    /* button in modal*/
+                                                                 /* button in modal*/
     margin: 30px auto 0;
     width: 200px;
 }
