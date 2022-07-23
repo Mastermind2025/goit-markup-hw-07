@@ -1,0 +1,200 @@
+div.backdrop {
+    /* modal window */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    width: 100%;
+    height: 100%;
+
+    transition:
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    min-height: 581px;
+    border-radius: 4px;
+    padding: 0px 40px;
+    transform: translate(-50%, -50%);
+    background-color: $white;
+    box-shadow:
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+div.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+h2.modal-title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+
+    color: $black;
+}
+
+
+input.form-field-input {
+    display: block;
+    padding: 2px 31px;
+    height: 40px;
+    width: 100%;
+    margin: 4px 0 0;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition-property: border;
+    transition-duration: var(--tran-dur);
+    transition-timing-function: var(--tran-t-fun);
+
+    
+}
+
+textarea.form-field-comment:hover,
+textarea.form-field-comment:focus,
+div.form-block input.form-field-input:hover,
+div.form-block input.form-field-input:focus {
+    border: 1px solid $color-blue;
+    outline: none;
+}
+
+svg.icon-man {
+    position: absolute;
+    top: 35px;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    fill: $black;
+    /* border: 1px solid red; */
+
+    transition-property: fill;
+    transition-duration: var(--tran-dur);
+    transition-timing-function: var(--tran-t-fun);
+}
+
+input.form-field-input:hover~.icon-man,
+input.form-field-input:focus~.icon-man,
+div.form-block svg.icon-man:hover {
+    fill: $color-blue;
+    outline: none;
+}
+
+div.form-block {
+    position: relative;
+    margin-top: 12px;
+}
+
+textarea.form-field-comment {
+    display: block;
+    min-height: 120px;
+    width: 100%;
+    margin: 4px 0 20px;
+    padding: 10px 12px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition-property: border;
+    transition-duration: var(--tran-dur);
+    transition-timing-function: var(--tran-t-fun);
+}
+
+textarea.form-field-comment::placeholder {
+
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+}
+
+
+form button[type="submit"] {
+    /* button in modal*/
+    margin: 30px auto 0;
+    width: 200px;
+}
+
+
+
+input.checkbox-input {
+    appearance: none;
+}
+
+div.checkbox-control {
+    position: relative;
+    width: 16px;
+    height: 15px;
+    // border: 2px solid $black;
+    @include border(2px, solid, $black);
+    flex-shrink: 0;
+    margin: 5px 8px 0 14px;
+    cursor: pointer;
+}
+
+.checkbox-flex {
+    display: flex;
+    margin-top: 20px;
+}
+
+svg.icon-check {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 16px;
+    height: 15px;
+    opacity: 0;
+}
+
+input.checkbox-input:checked+.icon-check {
+    opacity: 1;
+}
+
+label.label-link {
+    position: absolute;
+    top: 0;
+    right: 5px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $silver-gray;
+    padding-left: 32px;
+    cursor: pointer;
+}
+
+label.form-field-label a[href="#m"] {
+    color: $color-blue;
+    text-decoration: underline;
+
+    transition-property: border;
+    transition-duration: var(--tran-dur);
+    transition-timing-function: var(--tran-t-fun);
+}
+
+label.form-field-label a[href="#m"]:hover,
+label.form-field-label a[href="#m"]:focus {
+    color: var(--button-hover);
+
+    box-shadow:
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}

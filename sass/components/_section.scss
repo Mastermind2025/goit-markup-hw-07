@@ -1,0 +1,40 @@
+
+.container__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.section-bottom{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.section-top{
+    padding-top: 0;
+}
+
+section.what-we-do-section-for-background {
+    padding-top: 0;
+}
+
+div.main-section__wrap {
+    max-width: 1600px;
+    padding: 198px 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image:
+        linear-gradient(to bottom,
+            rgba(58, 50, 47, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images/img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}

@@ -1,0 +1,20 @@
+// mixins
+
+@mixin manyFlex($flex, $wrap, $row, $just-cont, $al-itm) {
+    display: $flex;
+    flex-wrap: $wrap;
+    flex-direction: $row;
+    justify-content: $just-cont;
+    align-items: $al-itm;
+
+}
+//  @include manyFlex(flex, wrap, row, center, flex-start);
+ 
+// @mixin border($number, $type, $color){
+//     border: $number $type $color;
+// }
+
+@mixin border($number, $type, $color) {
+    border: $number $type $color;
+}
+// @include border(1px, solid, rgb(136, 255, 0));

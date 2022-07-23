@@ -1,0 +1,218 @@
+/* main page */
+/* main page */
+/* main page */
+
+ul.attention-to-details {
+    @include manyFlex(flex, nowrap, row, space-between, flex-start);
+    // display: flex;
+    // justify-content: space-between;
+}
+
+
+ul.attention-to-details p {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $silver-gray;
+    width: 270px;
+}
+
+ul.what-we-do {
+    @include manyFlex(flex, nowrap, row, center, flex-start);
+}
+
+ul.our-people {
+    @include manyFlex(flex, nowrap, row, center, flex-start);
+    
+}
+
+h2.what-we-do-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+
+    color: $black;
+}
+
+ul.what-we-do img[width="370"] {
+    margin-right: 30px;
+    display: block;
+}
+
+ul.what-we-do li:last-child img[width="370"] {
+    margin-right: 0;
+}
+
+ul.what-we-do li {}
+
+ul.what-we-do div.what-we-do-block::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+}
+
+.what-we-do-block {
+    position: relative;
+    /* border: 1px dashed red; */
+}
+
+ul.what-we-do div.what-we-do-desktop {
+    position: absolute;
+    bottom: 24px;
+    left: 5%;
+    /* transform: translate(-50%); */
+    z-index: 10;
+    width: 329px;
+
+}
+
+div.what-we-do-desktop p {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+
+    color: $white;
+}
+
+section.our-people-section-for-background {
+    background-color: $light-silver;
+
+}
+
+li.our-people-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+li.our-people-item h3.our-people-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $black;
+}
+
+li.our-people-item p.our-people-profession {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+
+    color: $silver-gray;
+}
+
+div.our-people-block {
+    padding-top: 27px;
+    padding-bottom: 26px;
+}
+
+li.our-people-item {
+    background-color: $white;
+    box-shadow:
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+
+
+div.container-effective-solutions {
+    @include manyFlex(flex, wrap, column, center, center);
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+}
+
+li.our-people-item img[src*="./images/pe"] {
+    display: block;
+}
+
+ul.regular-customers {
+    @include manyFlex(flex, wrap, row, space-between, flex-start);
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: flex-start;
+}
+
+a.regular-customers-link {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    
+    align-items: center;
+   
+    @include border(1px, solid, $silver-icon);
+
+     transition-property: background-color;
+    transition-duration: var(--tran-dur);
+     transition-timing-function: var(--tran-t-fun);
+    
+}   
+
+a.regular-customers-link:hover svg {
+    fill: $color-blue;
+}
+
+a.regular-customers-link:focus svg {
+    /*focus*/
+    fill: $color-blue;
+    outline: none;
+}
+
+a.regular-customers-link:hover {
+    // border: 1px solid $color-blue;
+    @include border(1px, solid, $color-blue);
+}
+
+a.regular-customers-link svg {
+    fill: var(--silver-icon);
+    width: 106px;
+    height: 60px;
+
+    transition-property: border, fill;
+    transition-duration: var(--tran-dur);
+    transition-timing-function: var(--tran-t-fun);
+}
+
+li.attention-to-details-items img[src*="./images/ko"] {
+    margin-bottom: 30px;
+}
+
+ul.facebook-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+svg.attention-ant {
+    width: 70px;
+    height: 70px;
+}
+
+div.attention-to-block {
+    width: 270px;
+    height: 120px;
+    background-color: $light-silver;
+    margin-bottom: 30px;
+
+    @include manyFlex(flex, nowrap, row, center, center);
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+}
