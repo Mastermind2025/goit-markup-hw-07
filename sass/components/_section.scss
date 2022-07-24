@@ -1,28 +1,56 @@
 
-.container__wrapper {
+// section
+
+%align{
+    border: 1px dashed red;
+}
+
+.attention__wrapper {
     width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    // @extend %align;
+    
+}
+
+.container__wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
 
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.section-bottom{
+.solutions{
     padding-top: 0;
     padding-bottom: 0;
 }
-.section-top{
+.what{
+    padding-bottom: 94px;
+}
+.clients{
+    padding-top: 94px;
+}
+
+.what-we-do-section-for-background {
     padding-top: 0;
 }
 
-section.what-we-do-section-for-background {
-    padding-top: 0;
+.our{
+    background-color: $light-silver;
 }
 
-div.main-section__wrap {
+section.our-people-section-for-background {
+    background-color: $light-silver;
+
+}
+
+.solutions__back {
     max-width: 1600px;
     padding: 198px 0;
     margin-left: auto;

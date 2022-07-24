@@ -1,4 +1,4 @@
-h1.main-title {
+.solutions__main__title {
     font-size: 44px;
     font-weight: 900;
     text-transform: uppercase;
@@ -10,13 +10,23 @@ h1.main-title {
     
 }
 
-h3.attention-to-details-title {
+.attention__to__details__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    color: $black;
+}
+.what__we__do__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
 
     color: $black;
 }

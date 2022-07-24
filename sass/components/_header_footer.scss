@@ -1,10 +1,10 @@
 
 
 /* header and footer */
-div.footer-twitter__wrap{
+.footer-twitter__wrap{
     margin-left: 70px;
     margin-top: 12px;
-    & .facebook-block__link:hover svg {
+     .facebook-block__link:hover svg {
             width: 44px;
             height: 44px;
             border-radius: 50px;
@@ -18,7 +18,7 @@ div.footer-twitter__wrap{
 .footer-web-studio{ 
     padding-top: 0px;
 
-    & .bottom-logo {
+     .bottom-logo {
         font-size: 26px;
         margin-bottom: 20px;
         font-family: 'Raleway', sans-serif;
@@ -29,7 +29,7 @@ div.footer-twitter__wrap{
 
         color: $white;
 
-         & .logo-web {
+          .logo-web {
                 color: $color-blue;
             }
           .footer-address{
@@ -56,17 +56,17 @@ div.footer-twitter__wrap{
                 color: $color-blue;
             }
         }
-    & .nav-studio {
+    .nav-studio {
         @include manyFlex(flex, nowrap, row, center, center);
         // display: flex;
         // align-items: center;
     }
-    & .contact {
+    .contact {
         @include manyFlex(flex, nowrap, row, center, center);
         // display: flex;
            margin-left: auto;
 
-         & .contact__item {
+         &__item {
             @include manyFlex(flex, nowrap, row, center, center);
                 // display: flex;
                 // align-items: center;
@@ -76,7 +76,7 @@ div.footer-twitter__wrap{
 }
 
 
-header.header {
+.header {
     border-bottom: 1px solid $border;
     
     padding: 12px 0;
@@ -86,7 +86,7 @@ header.header {
     display: flex;
 }
 
-ul.contact {
+.contact {
     display: flex;
     margin-left: auto;
 }
@@ -109,7 +109,7 @@ ul.contact {
     transition-timing-function: var(--tran-t-fun);
 }
 
-li.nav-studio__item a.nav-studio-studia::after {
+.nav-studio__item a.nav-studio-studia::after {
     /*index border bottom current page */
     position: relative;
     top: 29px;
@@ -122,7 +122,7 @@ li.nav-studio__item a.nav-studio-studia::after {
     background-color: $color-blue;
 }
 
-li.nav-studio__item a.nav-portfolio::after {
+.nav-studio__item a.nav-portfolio::after {
     /*portfolio border bottom current page */
     position: relative;
     top: 29px;
@@ -135,15 +135,15 @@ li.nav-studio__item a.nav-portfolio::after {
     background-color: $color-blue;
 }
 
-li.nav-studio__item a:hover,
-li.contact__item .contact__link:hover,
-li.contact__item .contact__link:hover svg {
+.nav-studio__item a:hover,
+.contact__item .contact__link:hover,
+.contact__item .contact__link:hover svg {
     text-decoration: none;
     color: $color-blue;
     fill: $color-blue;
 }
 
-li.contact__item .contact__link{
+.contact__item .contact__link{
     font-size: 14px;
     line-height: 1.14;
     font-weight: 500;
@@ -171,12 +171,12 @@ li.contact__item .contact__link{
     margin-left: 0;
 }
 
-footer.footer {
+.footer {
     background-color: $dark-blue;
     padding: 60px 0 56px;
 }
 
-li.footer-list__item .footer-list__link{
+.footer-list__item .footer-list__link{
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
@@ -191,34 +191,34 @@ li.footer-list__item .footer-list__link{
 
 }
 
-li.footer-list__item {
+.footer-list__item {
     margin-bottom: 9px;
 }
 
-li.footer-list__item:nth-child(1) .footer-list__link{
+.footer-list__item:nth-child(1) .footer-list__link{
     color: $white;
 }
 
-li.footer-list__item:last-child{
+.footer-list__item:last-child{
     margin-bottom: 0;
 }
 
-li.footer-list__item:hover .footer-list__link{
+.footer-list__item:hover .footer-list__link{
     color: $color-blue;
 }
 
-div.footer__containerkiev {
+.footer__containerkiev {
     display: flex;
     justify-content: space-between;
 }
 
-li.contact__item .contact__link:focus svg {
+.contact__item .contact__link:focus svg {
     color: $color-blue;
     fill: $color-blue;
     outline: none;
 }
 
-a.facebook-block__link:focus {
+.facebook-block__link:focus {
     background: $color-blue;
     fill: $white;
     outline: none;
@@ -232,13 +232,13 @@ a.facebook-block__link:focus {
     background-color: $color-blue;
 }
 
-svg.contact-icon-let {
+.contact-icon-let {
     display: inline-block;
     margin-right: 10px;
     fill: $silver-gray;
 }
 
-address li.footer-list__item .footer-list__link:focus {
+.footer-list__item .footer-list__link:focus {
     color: $color-blue;
     outline: none;
 }
@@ -247,7 +247,7 @@ address li.footer-list__item .footer-list__link:focus {
     display: inline-flex;
     position: relative;
 
-    & .form-field-label {
+    .modal__field__label{
             display: block;
             font-family: 'Roboto';
             font-style: normal;
@@ -258,7 +258,7 @@ address li.footer-list__item .footer-list__link:focus {
             color: $contact-gray;
         }
 
-        & .footer-twitter-mail-form-background {
+        .footer-twitter-mail-form-background {
             margin-top: 20px;
             display: block;
             padding: 2px 15px;
@@ -270,7 +270,7 @@ address li.footer-list__item .footer-list__link:focus {
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
             color: rgba(255, 255, 255, 0.3);
         }
-        & .icon-send-footer-button {
+        .icon-send-footer-button {
             /* border: 1px solid red; */
             position: absolute;
             top: 34px;
@@ -280,19 +280,7 @@ address li.footer-list__item .footer-list__link:focus {
         }
 }
 
-
-.facebook-block__link .icon {
-    border-radius: 50px;
-    width: 44px;
-    height: 44px;
-    fill: var(--silver-icon);
-
-    transition-property: background-color, fill;
-    transition-duration: var(--tran-dur);
-    transition-timing-function: var(--tran-t-fun);
-}
-
-a.facebook-block__link {
+.facebook-block__link {
     display: inline-block;
     width: 44px;
     height: 44px;
@@ -300,13 +288,13 @@ a.facebook-block__link {
     margin-right: 10px;
 }
 
-ul.facebook-block li:last-child a.facebook-block__link {
+.facebook-block li:last-child .facebook-block__link {
     margin-right: 0;
 }
 
 
 
-div.footer-twitter__wrap .footer-twitter__title {
+.footer-twitter__wrap .footer-twitter__title {
     color: $white;
     font-family: var(--dominant-font);
     font-size: 14px;
@@ -315,12 +303,12 @@ div.footer-twitter__wrap .footer-twitter__title {
     letter-spacing: 0.03em;
 }
 
-div.footer-twitter__wrap svg.icon {
+.footer-twitter__wrap svg.icon {
     background-color: rgba(255, 255, 255, 0.1);
     fill: $white;
 }
 
-div.footer-twitter__wrap a.facebook-block__link:hover svg {
+.footer-twitter__wrap .facebook-block__link:hover svg {
     width: 44px;
     height: 44px;
     border-radius: 50px;
@@ -330,21 +318,21 @@ div.footer-twitter__wrap a.facebook-block__link:hover svg {
 }
 
 a:focus,
-li.nav-studio__item .nav-studio__link:focus,
-li.contact__item .contact__link:focus,
-li.contact__item .contact__link:focus svg {
+.nav-studio__item .nav-studio__link:focus,
+.contact__item .contact__link:focus,
+.contact__item .contact__link:focus svg {
     color: $color-blue;
     fill: $color-blue;
     outline: none;
 
 }
-a.facebook-block__link:focus {
+.facebook-block__link:focus {
     background: $color-blue;
     fill: $white;
     outline: none;
 }
 
-a.facebook-block__link:focus svg {
+.facebook-block__link:focus svg {
     fill: $white;
     outline: none;
 }
@@ -353,11 +341,11 @@ a.facebook-block__link:focus svg {
     padding-top: 20px;
 }
 
-address li.footer-list__item .footer-list__link:focus {
+.footer-list__item .footer-list__link:focus {
     color: $color-blue;
 }
 
-a.regular-customers-link:focus {
+.regular-customers-link:focus {
     border: 1px solid $color-blue;
     outline: none;
 }

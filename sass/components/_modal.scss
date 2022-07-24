@@ -1,4 +1,6 @@
-div.backdrop {
+// Modal
+
+.backdrop {
     /* modal window */
     position: fixed;
     top: 0;
@@ -28,15 +30,85 @@ div.backdrop {
         0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
+
+                &__form__sq {
+                position: relative;
+                margin-top: 12px;
+                // border: 1px solid red;
+                
+
+                            .modal__field__input {
+                                display: block;
+                                padding: 2px 31px;
+                                height: 40px;
+                                width: 100%;
+                                margin: 4px 0 0;
+
+                                border: 1px solid rgba(33, 33, 33, 0.2);
+                                border-radius: 4px;
+
+                                transition-property: border;
+                                transition-duration: var(--tran-dur);
+                                transition-timing-function: var(--tran-t-fun);
+                            }
+ 
+
+                            .modal__field__input:hover {
+                                border: 1px solid $color-blue;
+                                outline: none;
+                            }
+                            .modal__field__input:focus {
+                                border: 1px solid $color-blue;
+                                outline: none;
+                            }
+                            .modal__form__field__comment:hover,
+                            .modal__form__field__comment:focus
+                            {
+                                border: 1px solid $color-blue;
+                                outline: none;
+                            }
+                            .modal__icon__man {
+                                position: absolute;
+                                top: 35px;
+                                left: 12px;
+                                width: 18px;
+                                height: 18px;
+                                fill: $black;
+                                /* border: 1px solid red; */
+
+                                transition-property: fill;
+                                transition-duration: var(--tran-dur);
+                                transition-timing-function: var(--tran-t-fun);
+                            }
+
+                            .modal__field__input:hover~ .modal__icon__man,
+                            .modal__field__input:focus~ .modal__icon__man
+                            {
+                                    fill: $color-blue;
+                                        outline: none;
+                            }
+                            
+                                }
+
+            &__icon__close:hover {
+                fill: $color-blue;
+            }
+            &__button__close:focus {
+
+                    .modal__icon__close {
+                                fill: $color-blue;
+                                 }
+            }
+
 }
 
-div.backdrop.is-hidden {
+.backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
 
-h2.modal-title {
+.modal__title {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 20px;
@@ -48,59 +120,7 @@ h2.modal-title {
     color: $black;
 }
 
-
-input.form-field-input {
-    display: block;
-    padding: 2px 31px;
-    height: 40px;
-    width: 100%;
-    margin: 4px 0 0;
-
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-
-    transition-property: border;
-    transition-duration: var(--tran-dur);
-    transition-timing-function: var(--tran-t-fun);
-
-    
-}
-
-textarea.form-field-comment:hover,
-textarea.form-field-comment:focus,
-div.form-block input.form-field-input:hover,
-div.form-block input.form-field-input:focus {
-    border: 1px solid $color-blue;
-    outline: none;
-}
-
-svg.icon-man {
-    position: absolute;
-    top: 35px;
-    left: 12px;
-    width: 18px;
-    height: 18px;
-    fill: $black;
-    /* border: 1px solid red; */
-
-    transition-property: fill;
-    transition-duration: var(--tran-dur);
-    transition-timing-function: var(--tran-t-fun);
-}
-
-input.form-field-input:hover~.icon-man,
-input.form-field-input:focus~.icon-man,
-div.form-block svg.icon-man:hover {
-    fill: $color-blue;
-    outline: none;
-}
-
-div.form-block {
-    position: relative;
-    margin-top: 12px;
-}
-
-textarea.form-field-comment {
+.modal__form__field__comment {
     display: block;
     min-height: 120px;
     width: 100%;
@@ -115,7 +135,7 @@ textarea.form-field-comment {
     transition-timing-function: var(--tran-t-fun);
 }
 
-textarea.form-field-comment::placeholder {
+.modal__form__field__comment::placeholder {
 
     font-family: 'Roboto';
     font-size: 12px;
@@ -126,19 +146,17 @@ textarea.form-field-comment::placeholder {
 }
 
 
-form button[type="submit"] {
+.modal-button[type="submit"] {
     /* button in modal*/
     margin: 30px auto 0;
     width: 200px;
 }
 
-
-
-input.checkbox-input {
+.modal__checkbox__input {
     appearance: none;
 }
 
-div.checkbox-control {
+.modal__checkbox__control {
     position: relative;
     width: 16px;
     height: 15px;
@@ -149,12 +167,12 @@ div.checkbox-control {
     cursor: pointer;
 }
 
-.checkbox-flex {
+.modal__checkbox__flex {
     display: flex;
     margin-top: 20px;
 }
 
-svg.icon-check {
+.modal__icon__check {
     position: absolute;
     top: -2px;
     left: -2px;
@@ -163,11 +181,11 @@ svg.icon-check {
     opacity: 0;
 }
 
-input.checkbox-input:checked+.icon-check {
+.modal__checkbox__input:checked+.modal__icon__check {
     opacity: 1;
 }
 
-label.label-link {
+.modal__label__link {
     position: absolute;
     top: 0;
     right: 5px;
@@ -180,7 +198,7 @@ label.label-link {
     cursor: pointer;
 }
 
-label.form-field-label a[href="#m"] {
+ .modal__small__link {
     color: $color-blue;
     text-decoration: underline;
 
@@ -189,12 +207,21 @@ label.form-field-label a[href="#m"] {
     transition-timing-function: var(--tran-t-fun);
 }
 
-label.form-field-label a[href="#m"]:hover,
-label.form-field-label a[href="#m"]:focus {
-    color: var(--button-hover);
+.modal__icon__close {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    margin: 5px 5px;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    fill: var(--black);
+    // border: 1px solid var(--silver-icon);
+    @include border(1px, solid, $silver-icon);
+    border-radius: 50%;
 
-    box-shadow:
-        0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition-property: fill;
+    transition-duration: var(--tran-dur);
+    transition-timing-function: var(--tran-t-fun);
 }
+

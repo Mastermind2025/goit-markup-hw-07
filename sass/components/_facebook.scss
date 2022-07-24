@@ -1,0 +1,25 @@
+// Facebook
+// Facebook
+// Facebook
+
+%gold {    border: 1px dashed gold;}
+
+
+
+.facebook-block {
+    // @extend %gold;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.facebook-block__link .icon {
+    border-radius: 50px;
+    width: 44px;
+    height: 44px;
+    fill: var(--silver-icon);
+
+    transition-property: background-color, fill;
+    transition-duration: var(--tran-dur);
+    transition-timing-function: var(--tran-t-fun);
+}

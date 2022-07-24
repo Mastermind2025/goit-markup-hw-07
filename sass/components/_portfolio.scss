@@ -4,13 +4,13 @@
 
 
 
-ul.main-block-big-foto {
+.main-block-big-foto {
    @include manyFlex(flex, wrap, row, center, flex-start);
    margin: 0 auto;
    width: 1170px;
 }
 
-li.main-block-big-foto-items {
+.main-block-big-foto-items {
     position: relative;
     border: 1px solid $border;
     width: 370px;
@@ -23,7 +23,7 @@ li.main-block-big-foto-items {
     transition-timing-function: var(--tran-t-fun);
 }
 
-li.main-block-big-foto-items:hover {
+.main-block-big-foto-items:hover {
     box-shadow:
         0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -32,19 +32,19 @@ li.main-block-big-foto-items:hover {
 
 
 
-li.main-block-big-foto-items:nth-child(3n) {
+.main-block-big-foto-items:nth-child(3n) {
     margin-right: 0;
 }
 
-li.main-block-big-foto-items:nth-last-child(-n + 3) {
+.main-block-big-foto-items:nth-last-child(-n + 3) {
     margin-bottom: 0;
 }
 
-li.main-block-big-foto-items img[src*="./images/lap"] {
+.main-block-big-foto-items img[src*="./images/lap"] {
     display: block;
 }
 
-li.main-block-big-foto-items div.small-block h3 {
+.main-block-big-foto-items .small-block h3 {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -53,7 +53,7 @@ li.main-block-big-foto-items div.small-block h3 {
     color: $black;
 }
 
-li.main-block-big-foto-items div.small-block p {
+.main-block-big-foto-items .small-block p {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
@@ -62,38 +62,38 @@ li.main-block-big-foto-items div.small-block p {
     color: $silver-gray;
 }
 
-ul.portfolio-many-buttons {
+.portfolio-many-buttons {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-li.portfolio-many-buttons-item {
+.portfolio-many-buttons-item {
     margin-right: 8px;
     color: $white;
 }
 
-li.portfolio-many-buttons-item:last-child {
+.portfolio-many-buttons-item:last-child {
     margin-right: 0;
 }
 
-li.portfolio-many-buttons-item:nth-child(1) button {
+.portfolio-many-buttons-item:nth-child(1) button {
     width: 73px;
 }
 
-li.portfolio-many-buttons-item:nth-child(2) button {
+.portfolio-many-buttons-item:nth-child(2) button {
     width: 128px;
 }
 
-li.portfolio-many-buttons-item:nth-child(3) button {
+.portfolio-many-buttons-item:nth-child(3) button {
     width: 145px;
 }
 
-li.portfolio-many-buttons-item:nth-child(4) button {
+.portfolio-many-buttons-item:nth-child(4) button {
     width: 103px;
 }
 
-li.portfolio-many-buttons-item button {
+.portfolio-many-buttons-item button {
     /*many buttons in portfolio*/
     font-family: inherit;
     font-weight: 500;
@@ -112,8 +112,8 @@ li.portfolio-many-buttons-item button {
     transition-timing-function: var(--tran-t-fun);
 }
 
-li.portfolio-many-buttons-item button:focus,
-li.portfolio-many-buttons-item:hover button {
+.portfolio-many-buttons-item button:focus,
+.portfolio-many-buttons-item:hover button {
     background-color: $color-blue;
     color: $white;
     outline: none;
@@ -122,24 +122,24 @@ li.portfolio-many-buttons-item:hover button {
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-h2.title-hidden {
+.title-hidden {
     display: none;
 }
 
-div.small-block {
+.small-block {
     padding-top: 21px;
     padding-left: 24px;
     padding-bottom: 19px;
 }
 
-div.for-overlay {
+.for-overlay {
     position: relative;
     width: 100%;
     height: 293px;
     overflow: hidden;
 }
 
-div.overlay-block {
+.overlay-block {
     position: absolute;
     top: 0;
     left: 0;
@@ -156,11 +156,11 @@ div.overlay-block {
     
 }
 
-div.for-overlay:hover div.overlay-block {
+.for-overlay:hover .overlay-block {
     transform: translateY(0%);
 }
 
-li.main-block-big-foto-items p.overlay-text {
+.main-block-big-foto-items .overlay-text {
     width: 325px;
     padding-top: 60px;
     padding-left: 24px;
@@ -170,31 +170,4 @@ li.main-block-big-foto-items p.overlay-text {
     letter-spacing: 0.03em;
 
     color: $white;
-}
-svg.icon-close {
-    position: absolute;
-    top: 1px;
-    right: 1px;
-    margin: 5px 5px;
-    margin-left: auto;
-    width: 30px;
-    height: 30px;
-    fill: var(--black);
-    // border: 1px solid var(--silver-icon);
-    @include border(1px, solid, $silver-icon);
-    border-radius: 50%;
-
-    transition-property: fill;
-    transition-duration: var(--tran-dur);
-    transition-timing-function: var(--tran-t-fun);
-}
-
-
-svg.icon-close:hover {
-    fill: $color-blue;
-
-}
-
-div.modal button.button-close-in-corner:focus svg {
-    fill: $color-blue;
 }

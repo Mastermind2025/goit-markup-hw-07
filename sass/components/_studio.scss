@@ -1,15 +1,45 @@
 /* main page */
 /* main page */
 /* main page */
+%green {
+    border: 1px dashed green;
+}
+                                                // Эффективные решения
 
-ul.attention-to-details {
+.container__effective__solutions {
+    @include manyFlex(flex, wrap, column, center, center);
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+}
+
+.attention{}
+
+ // images radar,  clock, laptop, astronauts
+ .attention__pic {
+     width: 70px;
+     height: 70px;
+ }
+
+ .attention__to {
+     width: 270px;
+     height: 120px;
+     background-color: $light-silver;
+     margin-bottom: 30px;
+
+     @include manyFlex(flex, nowrap, row, center, center);
+     // display: flex;
+     // justify-content: center;
+     // align-items: center;
+ }
+
+.attention__to__details {
     @include manyFlex(flex, nowrap, row, space-between, flex-start);
     // display: flex;
     // justify-content: space-between;
 }
 
-
-ul.attention-to-details p {
+.attention__to__details__par {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -17,202 +47,162 @@ ul.attention-to-details p {
     width: 270px;
 }
 
-ul.what-we-do {
+.what__we__do {
     @include manyFlex(flex, nowrap, row, center, flex-start);
 }
 
-ul.our-people {
-    @include manyFlex(flex, nowrap, row, center, flex-start);
-    
-}
+.what__we__do {}
 
-h2.what-we-do-title {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
-
-    color: $black;
-}
-
-ul.what-we-do img[width="370"] {
-    margin-right: 30px;
-    display: block;
-}
-
-ul.what-we-do li:last-child img[width="370"] {
+.what__we__do li:last-child img[width="370"] {
     margin-right: 0;
 }
 
-ul.what-we-do li {}
+// block Чем мы занимаемся
 
-ul.what-we-do div.what-we-do-block::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 370px;
-    height: 70px;
-    background: rgba(47, 48, 58, 0.8);
+.what__we__do {
+    &__sq {
+            position: relative;
+            
+            & .what__we__do__pic {
+                    margin-right: 30px;
+                    display: block;
+            }
+
+            & .what__we__do__desktop {
+                    position: absolute;
+                    bottom: 24px;
+                    left: 5%;
+                    /* transform: translate(-50%); */
+                    z-index: 10;
+                    width: 329px;
+
+                    & .what__we__do__desktop__par {
+                            font-size: 14px;
+                            line-height: 1.14;
+                            letter-spacing: 0.03em;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            text-align: center;
+                    
+                            color: $white;
+                        }
+            }
+                        }
+        &__sq::after {
+
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 370px;
+        height: 70px;
+        background: rgba(47, 48, 58, 0.8);
+        }
 }
 
-.what-we-do-block {
-    position: relative;
-    /* border: 1px dashed red; */
+                        // section Наша команда
+
+.our__people {
+    @include manyFlex(flex, nowrap, row, center, flex-start);
+
+     &__item:not(:last-child) {
+            margin-right: 30px;
+        }
+
+     &__item {
+            background-color: $white;
+            box-shadow:
+                0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+
+            .our__people__item__pic {
+                display: block;
+            }
+
+            .our__people__bl {
+                padding-top: 27px;
+                padding-bottom: 26px;
+
+                    .our__people__title {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 1.18;
+                        text-align: center;
+                        letter-spacing: 0.03em;
+                
+                        color: $black;
+                    }
+
+                                        .our__people__profession {
+                                            font-size: 16px;
+                                            line-height: 1.18;
+                                            text-align: center;
+                                            letter-spacing: 0.03em;
+                                            margin-top: 10px;
+                    
+                                            color: $silver-gray;
+                                        }
+                    }
+                }
 }
 
-ul.what-we-do div.what-we-do-desktop {
-    position: absolute;
-    bottom: 24px;
-    left: 5%;
-    /* transform: translate(-50%); */
-    z-index: 10;
-    width: 329px;
-
-}
-
-div.what-we-do-desktop p {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-
-    color: $white;
-}
-
-section.our-people-section-for-background {
-    background-color: $light-silver;
-
-}
-
-li.our-people-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-li.our-people-item h3.our-people-title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: $black;
-}
-
-li.our-people-item p.our-people-profession {
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-top: 10px;
-
-    color: $silver-gray;
-}
-
-div.our-people-block {
-    padding-top: 27px;
-    padding-bottom: 26px;
-}
-
-li.our-people-item {
-    background-color: $white;
-    box-shadow:
-        0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-
-
-
-div.container-effective-solutions {
-    @include manyFlex(flex, wrap, column, center, center);
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-}
-
-li.our-people-item img[src*="./images/pe"] {
-    display: block;
-}
-
-ul.regular-customers {
+.clients__customers {
     @include manyFlex(flex, wrap, row, space-between, flex-start);
     // display: flex;
     // justify-content: space-between;
     // align-items: flex-start;
-}
-
-a.regular-customers-link {
-    width: 170px;
-    height: 92px;
-    display: flex;
-    justify-content: center;
-    border-radius: 4px;
     
-    align-items: center;
-   
-    @include border(1px, solid, $silver-icon);
-
-     transition-property: background-color;
-    transition-duration: var(--tran-dur);
-     transition-timing-function: var(--tran-t-fun);
     
-}   
+        .clients__regular__item{
+            
+                    .clients__regular__item__link {
+                    width: 170px;
+                    height: 92px;
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 4px;
+            
+                    align-items: center;
+            
+                    @include border(1px, solid, $silver-icon);
+            
+                    transition-property: background-color;
+                    transition-duration: var(--tran-dur);
+                    transition-timing-function: var(--tran-t-fun);
+                    }
 
-a.regular-customers-link:hover svg {
-    fill: $color-blue;
+                    .clients__regular__item__link:hover {
+                        @include border(1px, solid, $color-blue);
+                    }
+                    .clients__regular__item__link:focus {
+                        @include border(1px, solid, $color-blue);
+                    }
+
+                                           .clients__regular__item__link:hover .clients__icon {
+                                               fill: $color-blue;
+                                            }
+                                            .clients__regular__item__link:focus .clients__icon {
+                                                fill: $color-blue;
+                                                outline: none;
+                                            }
+
+                    .clients__icon {
+                            fill: var(--silver-icon);
+                            width: 106px;
+                            height: 60px;
+
+                            transition-property: border, fill;
+                            transition-duration: var(--tran-dur);
+                            transition-timing-function: var(--tran-t-fun);
+                            }
+            
+     }
+
 }
 
-a.regular-customers-link:focus svg {
-    /*focus*/
-    fill: $color-blue;
-    outline: none;
-}
 
-a.regular-customers-link:hover {
-    // border: 1px solid $color-blue;
-    @include border(1px, solid, $color-blue);
-}
 
-a.regular-customers-link svg {
-    fill: var(--silver-icon);
-    width: 106px;
-    height: 60px;
-
-    transition-property: border, fill;
-    transition-duration: var(--tran-dur);
-    transition-timing-function: var(--tran-t-fun);
-}
-
-li.attention-to-details-items img[src*="./images/ko"] {
-    margin-bottom: 30px;
-}
-
-ul.facebook-block {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-svg.attention-ant {
-    width: 70px;
-    height: 70px;
-}
-
-div.attention-to-block {
-    width: 270px;
-    height: 120px;
-    background-color: $light-silver;
-    margin-bottom: 30px;
-
-    @include manyFlex(flex, nowrap, row, center, center);
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-}
+                               
