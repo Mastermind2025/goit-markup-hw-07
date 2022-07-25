@@ -39,7 +39,7 @@
     // justify-content: space-between;
 }
 
-.attention__par {
+.attention__to__details__par {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -47,28 +47,28 @@
     width: 270px;
 }
 
-.what__we__do {
+.what__do {
     @include manyFlex(flex, nowrap, row, center, flex-start);
 }
 
-.what__we__do {}
+.what__do {}
 
-.what__we__do li:last-child img[width="370"] {
+.what__do li:last-child img[width="370"] {
     margin-right: 0;
 }
 
 // block Чем мы занимаемся
 
-.what__we__do {
-    &__sq {
+.what__weitem {
+    .what__sq {
             position: relative;
             
-            & .what__we__do__pic {
+             .what__pic {
                     margin-right: 30px;
                     display: block;
             }
 
-            & .what__we__do__desktop {
+                    .what__desktop {
                     position: absolute;
                     bottom: 24px;
                     left: 5%;
@@ -76,7 +76,7 @@
                     z-index: 10;
                     width: 329px;
 
-                    & .what__we__do__desktop__par {
+                    .what__par {
                             font-size: 14px;
                             line-height: 1.14;
                             letter-spacing: 0.03em;
@@ -88,7 +88,7 @@
                         }
             }
                         }
-        &__sq::after {
+                .what__sq::after {
 
         content: "";
         display: block;
