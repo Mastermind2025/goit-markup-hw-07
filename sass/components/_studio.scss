@@ -106,11 +106,11 @@
 .our__people {
     @include manyFlex(flex, nowrap, row, center, flex-start);
 
-     &__item:not(:last-child) {
+    .our__peopleitem:not(:last-child) {
             margin-right: 30px;
         }
 
-     &__item {
+    .our__peopleitem {
             background-color: $white;
             box-shadow:
                 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -118,15 +118,15 @@
                 0px 2px 1px rgba(0, 0, 0, 0.2);
             border-radius: 0px 0px 4px 4px;
 
-            .our__people__item__pic {
+            .our__peoplepic {
                 display: block;
             }
 
-            .our__people__bl {
+            .our__peoplebl {
                 padding-top: 27px;
                 padding-bottom: 26px;
 
-                    .our__people__title {
+                    .our__title {
                         font-weight: 500;
                         font-size: 16px;
                         line-height: 1.18;
@@ -136,7 +136,7 @@
                         color: $black;
                     }
 
-                                        .our__people__profession {
+                                        .our__par {
                                             font-size: 16px;
                                             line-height: 1.18;
                                             text-align: center;

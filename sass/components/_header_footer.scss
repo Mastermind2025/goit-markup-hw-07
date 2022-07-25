@@ -52,7 +52,7 @@
             text-decoration: none;
             color: var(--black-for-logo);
 
-            & .logo-web {
+            .logo-web {
                 color: $color-blue;
             }
         }
@@ -78,7 +78,6 @@
 
 .header {
     border-bottom: 1px solid $border;
-    
     padding: 12px 0;
 }
 
