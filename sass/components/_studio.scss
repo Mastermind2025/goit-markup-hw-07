@@ -33,13 +33,13 @@
      // align-items: center;
  }
 
-.attention__to__details {
+.attention__details {
     @include manyFlex(flex, nowrap, row, space-between, flex-start);
     // display: flex;
     // justify-content: space-between;
 }
 
-.attention__to__details__par {
+.attention__par {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
