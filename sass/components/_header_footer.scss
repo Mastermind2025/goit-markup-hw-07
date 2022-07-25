@@ -37,7 +37,7 @@
     }
 
 }
-.header-container-web-studio {
+.header__container-web{
     display: flex;
    
     .main-logo {
@@ -56,12 +56,12 @@
                 color: $color-blue;
             }
         }
-    .nav-studio {
+    .header-nav {
         @include manyFlex(flex, nowrap, row, center, center);
         // display: flex;
         // align-items: center;
     }
-    .contact {
+    .header-contact {
         @include manyFlex(flex, nowrap, row, center, center);
         // display: flex;
            margin-left: auto;
@@ -82,20 +82,20 @@
     padding: 12px 0;
 }
 
-.nav-studio__wrap {
+.header-nav__wrap {
     display: flex;
 }
 
-.contact {
+.header-contact {
     display: flex;
     margin-left: auto;
 }
 
-.nav-studio__item{
+.header-nav__item{
     margin: 0 25px;
 }
 
-.nav-studio__item .nav-studio__link {
+.header-nav__item .header-nav__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.4;
@@ -109,7 +109,7 @@
     transition-timing-function: var(--tran-t-fun);
 }
 
-.nav-studio__item a.nav-studio-studia::after {
+.header-nav__item a.header-nav-studia::after {
     /*index border bottom current page */
     position: relative;
     top: 29px;
@@ -122,7 +122,7 @@
     background-color: $color-blue;
 }
 
-.nav-studio__item a.nav-portfolio::after {
+.header-nav__item a.nav-portfolio::after {
     /*portfolio border bottom current page */
     position: relative;
     top: 29px;
@@ -135,21 +135,21 @@
     background-color: $color-blue;
 }
 
-.nav-studio__item a:hover,
-.contact__item .contact__link:hover,
-.contact__item .contact__link:hover svg {
+.header-nav__item a:hover,
+.header-contact__item .header-contact__link:hover,
+.header-contact__item .header-contact__link:hover svg {
     text-decoration: none;
     color: $color-blue;
     fill: $color-blue;
 }
 
-.contact__item .contact__link{
+.header-contact__item .header-contact__link{
     font-size: 14px;
     line-height: 1.14;
     font-weight: 500;
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: $contact-gray;
+    color: $header-contact-gray;
     padding: 20px 0;
     text-indent: 0;
     display: flex;
@@ -163,11 +163,11 @@
 
 
 
-.contact__item:last-child {
+.header-contact__item:last-child {
     margin-right: 0;
 }
 
-.contact__item:first-child {
+.header-contact__item:first-child {
     margin-left: 0;
 }
 
@@ -212,7 +212,7 @@
     justify-content: space-between;
 }
 
-.contact__item .contact__link:focus svg {
+.header-contact__item .header-contact__link:focus svg {
     color: $color-blue;
     fill: $color-blue;
     outline: none;
@@ -232,7 +232,7 @@
     background-color: $color-blue;
 }
 
-.contact-icon-let {
+.header-contact-icon__let {
     display: inline-block;
     margin-right: 10px;
     fill: $silver-gray;
@@ -255,7 +255,7 @@
             line-height: 1.16;
             letter-spacing: 0.01em;
     
-            color: $contact-gray;
+            color: $header-contact-gray;
         }
 
         .footer-twitter-mail-form-background {
@@ -318,9 +318,9 @@
 }
 
 a:focus,
-.nav-studio__item .nav-studio__link:focus,
-.contact__item .contact__link:focus,
-.contact__item .contact__link:focus svg {
+.header-nav__item .header-nav__link:focus,
+.header-contact__item .header-contact__link:focus,
+.header-contact__item .header-contact__link:focus svg {
     color: $color-blue;
     fill: $color-blue;
     outline: none;
