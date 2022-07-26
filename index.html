@@ -6,13 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Fonts before styles -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
 
-    <!-- Сначала нормализатор стилей-->
+ <!-- Style normalizer first -->
+
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/main.min.css" />
@@ -24,11 +27,11 @@
 <body>
 
     <header class="header">
-        <div class="header__container header__container-web">
+        <div class="header__container header__container_web">
             <a class="main-logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
             <nav class="header-nav">
                 <ul class="header-nav__wrap">
-                    <li class="header-nav__item"><a class="header-nav__link header-nav-studia" href="index.html">Студия</a></li>
+                    <li class="header-nav__item"><a class="header-nav__link header-nav_studia" href="index.html">Студия</a></li>
                     <li class="header-nav__item"><a class="header-nav__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
                 </ul>
@@ -36,7 +39,7 @@
             <ul class="header-contact">
                 <li class="header-contact__item">
                     <a class="header-contact__link" href="mailto:info@devstudio.com">
-                        <svg class="header-contact-icon__let" width="16" height="12" aria-hidden="true">
+                        <svg class="header-contact__icon" width="16" height="12" aria-hidden="true">
                             <use href="./images/icons.svg#icon-let"></use>
                         </svg>
                         info@devstudio.com
@@ -45,7 +48,7 @@
 
                 <li class="header-contact__item">
                     <a class="header-contact__link" href="tel:+380961111111">
-                        <svg class="header-contact-icon__let" width="16" height="12" aria-hidden="true">
+                        <svg class="header-contact__icon" width="16" height="12" aria-hidden="true">
                             <use href="./images/icons.svg#icon-tel"></use>
                         </svg>
                         +380 96 111 11 11
@@ -79,7 +82,7 @@
                             </svg>
                         </div>
                         <h3 class="attention__detailtitle">Внимание к деталям</h3>
-                        <p class="attention__to__details__par">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                        <p class="attention__topar">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
 
                     <li class="attention__items">
@@ -90,7 +93,8 @@
                             </svg>
                         </div>
                         <h3 class="attention__detailtitle">Пунктуальность</h3>
-                        <p class="attention__to__details__par">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                        <p class="attention__topar">Задача организации, в особенности же рамки и место
+                             обучения кадров влечет за собой.</p>
                     </li>
 
                     <li class="attention__items">
@@ -100,7 +104,8 @@
                             </svg>
                         </div>
                         <h3 class="attention__detailtitle">Планирование</h3>
-                        <p class="attention__to__details__par">Равным образом консультация с широким активом в значительной степени обуславливает. </p>
+                        <p class="attention__topar">Равным образом консультация с широким активом в
+                             значительной степени обуславливает. </p>
                     </li>
 
                     <li class="attention__items">
@@ -110,7 +115,8 @@
                             </svg>
                         </div>
                         <h3 class="attention__detailtitle">Современные технологии</h3>
-                        <p class="attention__to__details__par">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        <p class="attention__topar">Значимость этих проблем настолько очевидна,
+                             что реализация плановых заданий.</p>
                     </li>
 
                 </ul>
@@ -395,20 +401,22 @@
 
     <footer class="footer">
         <div class="container__wrapper footer__containerkiev">
-            <div class="footer-web-studio">
-    <a class="main-logo bottom-logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
+            <div class="footer-webstudio">
+    <a class="main-logo main-logo_bottom" href="./index.html"><span class="logo-web">Web</span>Studio</a>
 
-                <address class="footer-address">
-                    <ul class="footer-list">
-<li class="footer-list__item"><a class="footer-list__link" href="#f">г. Киев, пр-т Леси Украинки, 26</a></li>
-<li class="footer-list__item"><a class="footer-list__link" href="mailto:info@example.com">info@example.com</a></li>
-<li class="footer-list__item"><a class="footer-list__link" href="tel:+380991111111">+380 99 111 11 11</a></li>
+                <address class="footer-webstudio__address">
+                    <ul class="footer-webstudio__list">
+<li class="footer-webstudio__item"><a class="footer-webstudio__link" href="#f">г. Киев, пр-т Леси Украинки, 26</a></li>
+<li class="footer-webstudio__item"><a class="footer-webstudio__link" href="mailto:info@example.com">info@example.com</a></li>
+<li class="footer-webstudio__item"><a class="footer-webstudio__link" href="tel:+380991111111">+380 99 111 11 11</a></li>
                     </ul>
                 </address>
+
             </div>
 
-            <div class="footer-twitter__wrap">
-                <h4 class="footer-twitter__title">ПРИСОЕДИНЯЙТЕСЬ</h4>
+            <div class="footer__wrap">
+                <h4 class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</h4>
+                
                 <ul class="facebook-block">
                     <li>
                         <a href="#f" class="facebook-block__link">
@@ -443,109 +451,99 @@
                     </li>
 
                 </ul>
-
             </div>
-    <div class="footer-twitter__wrap">
-        <h4 class="footer-twitter__title">Подпишитесь на рассылку</h4>
+
+    <div class="footer__wrap">
+        <h4 class="footer__title">Подпишитесь на рассылку</h4>
     
-        <form class="small-form" name="small-form" autocomplete="off">
+        <form class="footer__form" name="small-form" autocomplete="off">
+            <div class="footer__mail-form">
+                    <label class="footer-label" for="user-mail-web"></label>
+                    <input class="footer-input" id="user-mail-web" type="email" name="user-mail"
+                        placeholder="E-mail">
+        
+                <button class="button footer__button" type="submit">Подписаться</button>
     
-            <div class="footer-twitter-mail-form">
-    <label class="form-field-label" for="user-mail-web"></label>
-    <input class="footer-twitter-mail-form-background" id="user-mail-web" type="email" name="user-mail"
-        placeholder="E-mail">
-    
-    
-                <button class="button footer-button" type="submit">Подписаться</button>
-    
-                <svg class="icon-send-footer-button" aria-hidden="true" width="32" height="32">
+                <svg class="footer__icon-send" aria-hidden="true" width="32" height="32">
                     <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
-    
             </div>
-    
+
         </form>
-    
     </div>
-
-
-
 
         </div>
         <!-- container__wrapper in footer-->
-
 
     </footer>
 
     <!-- modal window -->
 
-
-
     <div class="backdrop is-hidden" data-modal>
 
-        <div class="modal">
+    <div class="modal">
 
     <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
 
         <form class="modal__form" name="main-form" autocomplete="off">
-            <div class="modal__form__sq">
-                <label class="modal__field__label" for="user-name">Имя</label>
+            <div class="modal__formsq">
+                <label class="modal__fieldlabel" for="user-name">Имя</label>
         
-                <input class="modal__field__input" id="user-name" type="text" name="user-name" required>
+                <input class="modal__fieldinput" id="user-name" type="text" name="user-name" required>
         
-                <svg class="modal__icon__man" aria-hidden="true">
+                <svg class="modal__iconman" aria-hidden="true">
                     <use href="./images/icons.svg#men" width="13" height="13"></use>
                 </svg>
-        
             </div>
         
-            <div class="modal__form__sq">
-                <label class="modal__field__label" for="user-phone">Телефон</label>
-                <input class="modal__field__input" id="user-phone" type="tel" name="user-phone" required>
+            <div class="modal__formsq">
+                <label class="modal__fieldlabel" for="user-phone">Телефон</label>
+                <input class="modal__fieldinput" id="user-phone" type="tel" name="user-phone" required>
         
-                <svg class="modal__icon__man" aria-hidden="true">
+                <svg class="modal__iconman" aria-hidden="true">
                     <use href="./images/icons.svg#icon-phone-b" width="20" height="20"></use>
                 </svg>
             </div>
         
-            <div class="modal__form__sq">
-                <label class="modal__field__label" for="user-mail">Почта</label>
-                <input class="modal__field__input" id="user-mail" type="email" name="user-mail" required>
+            <div class="modal__formsq">
+                <label class="modal__fieldlabel" for="user-mail">Почта</label>
+                <input class="modal__fieldinput" id="user-mail" type="email" name="user-mail" required>
         
-                <svg class="modal__icon__man" aria-hidden="true">
+                <svg class="modal__iconman" aria-hidden="true">
                     <use href="./images/icons.svg#icon-email-b" width="22" height="18"></use>
                 </svg>
             </div>
         
-            <div class="modal__form__sq">
-                <label class="modal__field__label" for="user-comment">Комментарий</label>
-                <textarea class="modal__form__field__comment" id="user-comment" name="user-comment"
+            <div class="modal__formsq">
+                <label class="modal__fieldlabel" for="user-comment">Комментарий</label>
+                <textarea class="modal__formfieldcomment" id="user-comment" name="user-comment"
                     placeholder="Введите текст" maxlength="600"></textarea>
             </div>
         
-            <div class="modal__form__sq modal__checkbox__flex">
-    <div class="modal__checkbox__control">
-        <input class="modal__checkbox__input" id="checkbox-input" type="checkbox" name="checkbox-input"
-            required>
+            <div class="modal__formsq modal__checkbox_flex">
 
-        <svg class="modal__icon__check" aria-hidden="true" width="32" height="32">
-            <use href="./images/icons.svg#check"></use>
-        </svg>
-    </div>
+            <div class="modal__checkboxcontrol">
+                <input class="modal__checkboxinput" id="checkbox-input" type="checkbox" name="checkbox-input"
+                    required>
 
-    <label class="modal__field__label modal__label__link" for="checkbox-input">Соглашаюсь с рассылкой и принимаю
-        <a href="#m" class="modal__small__link">Условия договора</a>
-    </label>
+                <svg class="modal__iconcheck" aria-hidden="true" width="32" height="32">
+                    <use href="./images/icons.svg#check"></use>
+                </svg>
+            </div>
+
+            <label class="modal__fieldlabel modal__labellink" for="checkbox-input">Соглашаюсь с рассылкой и принимаю
+                <a href="#m" class="modal__smalllink">Условия договора</a>
+            </label>
+
             </div>
         
                     <button class="button modal-button" type="submit">Отправить</button>
         </form>
-            <button type="button" class="modal__button__close" data-modal-close>
-                <svg class="modal__icon__close" aria-hidden="true" width="32" height="32">
+            <button type="button" class="modal__buttonclose" data-modal-close>
+                <svg class="modal__iconclose" aria-hidden="true" width="32" height="32">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
-
         </div>
 
     </div>

@@ -1,7 +1,8 @@
 
 
 /* header and footer */
-.footer-twitter__wrap{
+
+.footer-webstudio__wrap{
     margin-left: 70px;
     margin-top: 12px;
      .facebook-block__link:hover svg {
@@ -15,10 +16,15 @@
 
 }
 
-.footer-web-studio{ 
+.footer__wrap {
+    margin-left: 70px;
+    margin-top: 12px;
+}
+
+.footer-webstudio{ 
     padding-top: 0px;
 
-     .bottom-logo {
+     .main-logo_bottom {
         font-size: 26px;
         margin-bottom: 20px;
         font-family: 'Raleway', sans-serif;
@@ -32,12 +38,12 @@
           .logo-web {
                 color: $color-blue;
             }
-          .footer-address{
+          .footer-webstudio__address{
          }
     }
 
 }
-.header__container-web{
+.header__container_web{
     display: flex;
    
     .main-logo {
@@ -108,7 +114,7 @@
     transition-timing-function: var(--tran-t-fun);
 }
 
-.header-nav__item a.header-nav-studia::after {
+.header-nav__item a.header-nav_studia::after {
     /*index border bottom current page */
     position: relative;
     top: 29px;
@@ -121,7 +127,7 @@
     background-color: $color-blue;
 }
 
-.header-nav__item a.nav-portfolio::after {
+.header-nav__item a.nav_portfolio::after {
     /*portfolio border bottom current page */
     position: relative;
     top: 29px;
@@ -175,7 +181,7 @@
     padding: 60px 0 56px;
 }
 
-.footer-list__item .footer-list__link{
+.footer-webstudio__item .footer-webstudio__link {
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
@@ -190,22 +196,25 @@
 
 }
 
-.footer-list__item {
+.footer-webstudio__item {
     margin-bottom: 9px;
 }
 
-.footer-list__item:nth-child(1) .footer-list__link{
+.footer-webstudio__item:nth-child(1) .footer-webstudio__link{
     color: $white;
 }
 
-.footer-list__item:last-child{
-    margin-bottom: 0;
-}
+// .footer-webstudio__item:last-child{
+//     margin-bottom: 0;
+// }
 
-.footer-list__item:hover .footer-list__link{
+.footer-webstudio__item:last-child{
+           margin-bottom: 0;
+         }
+
+.footer-webstudio__item:hover .footer-webstudio__link {
     color: $color-blue;
 }
-
 .footer__containerkiev {
     display: flex;
     justify-content: space-between;
@@ -231,22 +240,22 @@
     background-color: $color-blue;
 }
 
-.header-contact-icon__let {
+.header-contact__icon{
     display: inline-block;
     margin-right: 10px;
     fill: $silver-gray;
 }
 
-.footer-list__item .footer-list__link:focus {
+.footer-webstudio__item .footer-webstudio__link:focus {
     color: $color-blue;
     outline: none;
 }
 
-.footer-twitter-mail-form {
+.footer__mail-form {
     display: inline-flex;
     position: relative;
 
-    .modal__field__label{
+    .modal__fieldlabel{
             display: block;
             font-family: 'Roboto';
             font-style: normal;
@@ -257,7 +266,7 @@
             color: $header-contact-gray;
         }
 
-        .footer-twitter-mail-form-background {
+        .footer-input {
             margin-top: 20px;
             display: block;
             padding: 2px 15px;
@@ -269,7 +278,7 @@
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
             color: rgba(255, 255, 255, 0.3);
         }
-        .icon-send-footer-button {
+        .footer__icon-send {
             /* border: 1px solid red; */
             position: absolute;
             top: 34px;
@@ -291,9 +300,7 @@
     margin-right: 0;
 }
 
-
-
-.footer-twitter__wrap .footer-twitter__title {
+.footer__wrap .footer__title {
     color: $white;
     font-family: var(--dominant-font);
     font-size: 14px;
@@ -302,18 +309,16 @@
     letter-spacing: 0.03em;
 }
 
-.footer-twitter__wrap svg.icon {
+.footer__wrap svg.icon {
     background-color: rgba(255, 255, 255, 0.1);
     fill: $white;
 }
-
-.footer-twitter__wrap .facebook-block__link:hover svg {
+.footer__wrap .facebook-block__link:hover svg {
     width: 44px;
     height: 44px;
     border-radius: 50px;
-
-    fill: $white;
-    background-color: $color-blue;
+    fill: #fff;
+    background-color: #2196f3;
 }
 
 a:focus,
@@ -336,15 +341,22 @@ a:focus,
     outline: none;
 }
 
-.footer-list{
+.footer-webstudio__list{
     padding-top: 20px;
 }
 
-.footer-list__item .footer-list__link:focus {
+.footer-webstudio__item .footer-webstudio__link:focus {
     color: $color-blue;
 }
 
 .regular-customers-link:focus {
     border: 1px solid $color-blue;
     outline: none;
+}
+
+.footer__mail-form .footer__button {
+    width: 200px;
+    height: 50px;
+    margin: 20px 0 0 12px;
+    text-indent: -30px;
 }
